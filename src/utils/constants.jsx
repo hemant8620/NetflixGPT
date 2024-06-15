@@ -29,6 +29,4 @@ export const SUPPORTED_LANGUAGES = [
   },
 ];
 
-export const OPENAI_KEY =
-  "sk-proj-U1OdeSBJGcT24KfRbhK9T3BlbkFJmHhL1rVilcWDLTmn1i64";
 export const GOOGLE_KEY = "AIzaSyA5olKZIZjF9tNSuiDucSM_YYIu0DK-MGA";
