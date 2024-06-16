@@ -5,8 +5,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNjgzMzNlNDMzNzE1MzAwOGY2MTljYzdhYjZkZmU3NSIsInN1YiI6IjY2MmRmMDkzNjlkMjgwMDEyOTQzMDhiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EPr86MoG_kh5jrAZbMRUB_zBsuAwYJF6EqfjB4NGPKc",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -29,4 +28,4 @@ export const SUPPORTED_LANGUAGES = [
   },
 ];
 
-export const GOOGLE_KEY = "AIzaSyA5olKZIZjF9tNSuiDucSM_YYIu0DK-MGA";
+export const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_KEY;
