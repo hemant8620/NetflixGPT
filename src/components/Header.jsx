@@ -49,10 +49,10 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute px-8 bg-gradient-to-b from-black z-10 w-screen flex justify-between">
-      <img className="w-44" src={LOGO} alt="logo" />
+    <div className="absolute px-8 bg-gradient-to-b from-black z-10 w-screen flex flex-col md:flex-row justify-between">
+      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
       {user && (
-        <div className="flex p-2">
+        <div className="flex p-2 justify-between">
           {showGptSearch && (
             <select
               className="p-2 m-2 bg-gray-900 text-white"
@@ -72,7 +72,7 @@ const Header = () => {
             {showGptSearch ? "Home Page" : "GPT search"}
           </button>
           <img
-            className="w-14 h-14"
+            className="hidden md:block w-14 h-14"
             src="https://occ-0-4995-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTZ2zlLdBVC05fsd2YQAR43J6vB1NAUBOOrxt7oaFATxMhtdzlNZ846H3D8TZzooe2-FT853YVYs8p001KVFYopWi4D4NXM.png?r=229"
             alt="usericon"
           />
